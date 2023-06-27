@@ -1,0 +1,124 @@
+body{
+    position: relative;
+}
+
+
+.wrapper{
+    width: auto;
+    max-width: 1360px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+
+
+#header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    font-size: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+
+
+.menu{
+    width: 40px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+#navi{
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    color: #fff;
+    padding: 36px 50px;
+    transition: all 0.5s;
+    z-index: 20;
+    opacity: 0;
+}
+
+#navi a{
+    color: #fff;
+    margin-bottom: 14px;
+    text-decoration: none;
+    transition: all 0.5s;
+    display: block;
+    font-size: 0.875rem;
+}
+
+.open #navi{
+    left: 0;
+    opacity: 1;
+}
+    
+
+
+#mask{
+    display: none;
+    transition: all 0.5s;
+}
+
+.open #mask{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#top{
+    padding-top: 80px;
+    padding-bottom: 160px;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.design{
+    width: 23%;
+    margin-bottom: 40px;
+}
+
+.list img{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+#more{
+    text-align: center;
+}
+
+#sns a{
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+#bottom{
+    font-size: 8px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .design{
+        width: 47%;
+    }
+    
+    
+}
